@@ -17,13 +17,13 @@ CORS(app)
 # --- Firebase Setup ---
 cred = credentials.Certificate("serviceAccountKey.json")
 initialize_app(cred, {
-    'databaseURL': "https://face-reg-8d928-default-rtdb.firebaseio.com/"
+    'databaseURL': ""
 })
 firebase_ref = db.reference("Employee")
 
 # --- Supabase Setup ---
-SUPABASE_URL = "https://julctvlqgvpceralzvus.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1bGN0dmxxZ3ZwY2VyYWx6dnVzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTQwMzUzMywiZXhwIjoyMDYwOTc5NTMzfQ.qgxcQZOH-2Pa1jLosYfJqiaJMwZ9OHZaCYo7AFUSerc"
+SUPABASE_URL = ""
+SUPABASE_KEY = ""
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 supabase_storage = supabase.storage.from_('employees-images')
 
