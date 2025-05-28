@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+h2 {
+    color: #343a40;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.chart-container {
+    width: 750px;
+    max-width: 750px;
+    height: 400px; /* Adjust as needed */
+    margin: auto;
+}
+
+#gradingChart {
+    width: 100% !important;
+    height: 100% !important;
+}

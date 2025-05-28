@@ -1,0 +1,40 @@
+.gallery-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Image Items - Fixing Uneven Heights */
+.gallery-item {
+    width: 30%;  /* Make all images uniform */
+    height: 250px; /* Fixed height for consistency */
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure all images fit properly */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop images to fit container */
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.05);
+}

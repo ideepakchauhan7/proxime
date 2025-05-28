@@ -1,0 +1,183 @@
+/* General Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+#hero-section {
+    height: 300px;
+    background-size: contain; /* Ensure the whole image fits */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+    background-position: center; /* Center the image within the section */
+    transition: background-image 1s ease-in-out;
+}
+
+header {
+    background: linear-gradient(135deg, teal, black);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+header p {
+    color: thistle;
+}
+
+/* Styling for the header text */
+.header-text {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    height: 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Styling for the hero section */
+#hero-section {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+
+/* Ongoing Projects Section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between; /* Ensures equal spacing */
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 20px); /* Each card takes 1/3rd of the row minus the gap */
+    max-width: calc(33.333% - 20px); /* Ensure max width respects row division */
+    box-sizing: border-box; /* Ensures padding doesn't overflow the card */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.project a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the entire card clickable */
+}
+
+.project a:hover h2, .project a:hover p {
+    color: #000000; /* Optional: Change color on hover */
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    overflow: hidden; /* Prevents overflow of content */
+    text-overflow: ellipsis; /* Adds "..." for overflowing text */
+    display: -webkit-box; /* Required for line-clamp */
+    -webkit-box-orient: vertical;
+    
+}
+
+
+/* Styling for the "Our Work in Cities" section */
+#our-work-in-cities {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.pie-chart, .image-grid, .bar-graph {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 250px;
+}
+
+.pie-chart canvas, .bar-graph canvas {
+    width: 400px !important;
+    height: 250px !important;
+}
+
+.image-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+

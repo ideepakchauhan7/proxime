@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome {{ data.name }}</h1>
+        <ul>
+            <li><strong>ID:</strong> {{ data.key }}</li>
+            <li><strong>Major:</strong> {{ data.major }}</li>
+            <li><strong>Year:</strong> {{ data.year }}</li>
+            <li><strong>Starting Year:</strong> {{ data.starting_year }}</li>
+            <li><strong>Total Attendance:</strong> {{ data.total_attendance }}</li>
+            <li><strong>Standing:</strong> {{ data.standing }}</li>
+            <li><strong>Last Attendance:</strong> {{ data.last_attendance_time }}</li>
+        </ul>
+        <a class="home-button" href="http://localhost:3000/Proxime_ERP-main/utilities/face_dashboard.php">Go to Dashboard</a>
+    </div>
+</body>
+</html>

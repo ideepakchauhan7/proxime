@@ -1,0 +1,212 @@
+/* Reset styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.completed-header {
+    background: linear-gradient(135deg, teal, black);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.completed-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.completed-header p {
+    font-size: 1.2rem;
+    color: #d1d1d1;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: teal;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats-card {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    height:180px;
+}
+
+
+
+.stats-card h2{
+    margin-top: 50px;
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #009f9d;
+    margin-top: 10px;
+}
+
+/* Pie Chart Card Styles */
+.pie-chart-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align the labels and chart */
+}
+
+.pie-chart-card canvas {
+    max-width: 45%;
+    height: auto;
+}
+
+.pie-chart-card .chart-labels {
+    text-align: left;
+    width: 35%;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the labels */
+}
+
+/* Labels for the Pie Chart */
+.chart-labels ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.chart-labels li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-residential {
+    background-color: #FF6384;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.li-commercial {
+    background-color: #36A2EB;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.li-industrial {
+    background-color: #FFCE56;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.li-others {
+    background-color: #4BC0C0;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.chart-labels li span {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.completion-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: teal;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Projects Showcase */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+
+    object-fit: contain;  /* Ensures the full image is shown */
+    max-height: 80%;  /* Adjust to fit the container */
+    width: 100%;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-info .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

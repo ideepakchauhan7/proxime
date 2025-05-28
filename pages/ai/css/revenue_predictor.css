@@ -1,0 +1,120 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f2f5, #dbeafe);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        #ai-embed {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 600px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #ai-embed h3 {
+            font-size: 24px;
+            color: #1d4ed8;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #ai-embed ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        #ai-embed ul li {
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: #f1f5f9;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        #ai-embed ul li:hover {
+            background-color: #e0e7ff;
+        }
+
+        #ai-embed p {
+            font-size: 16px;
+            color: #374151;
+            margin: 8px 0;
+        }
+
+        strong {
+            color: #1e293b;
+        }
+
+        .amount {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .summary-box {
+            background: #fefce8;
+            border: 1px solid #fde68a;
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            margin-left: 50px;
+            font-size: 15px;
+            color: #4b5563;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        
+        .summary-box h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #b45309;
+        }
+        
+        .summary-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        .summary-box li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        #revenueChart {
+            display: block;
+            margin: 40px auto;
+            max-width: 100%;
+        }
+
+        .download-button{
+            margin: 20px; 
+            padding: 10px 20px; 
+            background-color: teal; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: rgb(68, 175, 175);
+          }
+
+          @media (max-width: 600px) {
+            .report-container {
+              padding: 0.8rem;
+            }
+          }

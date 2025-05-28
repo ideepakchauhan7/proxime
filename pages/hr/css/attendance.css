@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scroll issues */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    flex-grow: 1;
+    width: 100%;
+    height: calc(100vh - 40px); /* Adjust height dynamically */
+    border: 0;
+}

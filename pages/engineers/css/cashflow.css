@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Flexbox */
+.cashflow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Left Section (Graph) */
+.left-section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+/* Right Section (Balance + Pie Chart) */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Balance Card */
+.balance-card {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cashflow-container {
+        flex-direction: column;
+    }
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+#expenseChart {
+    height: 320px !important; /* Set desired height */
+    max-height: 320px;
+}

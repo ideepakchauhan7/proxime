@@ -1,0 +1,55 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Leads List Styling */
+#lead-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lead {
+    background: #fff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lead-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.new {
+    background-color: #007bff;
+    color: white;
+}
+
+.contacted {
+    background-color: #ffc107;
+    color: black;
+}
+
+.qualified {
+    background-color: #28a745;
+    color: white;
+}
+
+.closed {
+    background-color: #dc3545;
+    color: white;
+}

@@ -1,0 +1,18 @@
+/* Navbar Customizations */
+.navbar {
+    padding: 10px 20px;
+}
+
+/* Style for the Logout button */
+.btn-danger {
+    margin-left: auto;  /* To push the button to the right */
+}
+
+/* Navbar Text Styling */
+.navbar-text {
+    font-size: 30px;  /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    flex-grow: 1; /* Ensure the text takes up space to center it */
+    
+}

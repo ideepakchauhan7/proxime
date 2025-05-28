@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Bank Grid */
+.bank-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.bank-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.bank-icon {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.bank-details {
+    flex-grow: 1;
+}
+
+.bank-actions button {
+    margin-left: 5px;
+}
+
+/* Add Bank Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}

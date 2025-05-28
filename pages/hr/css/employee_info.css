@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Employee Container */
+.employee-container {
+    width: 90%;
+    max-width: 1200px; /* Prevents it from becoming too wide on large screens */
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: #333;
+}
+
+/* Actions (Search + Add Button) */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    margin-bottom: 20px;
+}
+
+/* Search Input */
+.actions input {
+    padding: 8px;
+    width: 250px;
+    max-width: 100%; /* Ensures it fits smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add Employee Button */
+.add-btn {
+    text-decoration: none;
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap; /* Prevents text from breaking on small screens */
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table Headers & Cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table Header */
+th {
+    background: #007bff;
+    color: white;
+}
+
+/* Status Styling */
+.active {
+    color: green;
+    font-weight: bold;
+}
+
+.inactive {
+    color: red;
+    font-weight: bold;
+}
+
+/* Action Buttons */
+.view-btn, .edit-btn, .delete-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.view-btn {
+    background: #17a2b8;
+    color: white;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+/* 🎯 RESPONSIVE DESIGN */
+
+/* 🔹 For Tablets (Max Width: 768px) */
+@media (max-width: 768px) {
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 14px; /* Reduce font size slightly */
+    }
+
+    .view-btn, .edit-btn, .delete-btn {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+}
+
+/* 🔹 For Mobile Devices (Max Width: 600px) */
+@media (max-width: 600px) {
+    .employee-container {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto; /* Enables horizontal scrolling on small screens */
+        white-space: nowrap; /* Prevents table from breaking */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px; /* Slightly reduce font size */
+    }
+
+    .actions input {
+        width: 100%; /* Full width input field */
+    }
+
+    .add-btn {
+        width: 100%; /* Full width button */
+        text-align: center;
+        padding: 12px;
+    }
+
+    .view-btn, .edit-btn, .delete-btn {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+}

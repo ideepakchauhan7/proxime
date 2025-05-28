@@ -1,0 +1,148 @@
+/* Reset margins and apply universal styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    background: linear-gradient(135deg, teal,black);
+    color: #333; /* Neutral text color */
+    overflow: hidden; 
+}
+
+/* Center the login container vertically and horizontally */
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+    border-radius: 15px; /* Smooth, rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transform: translateY(50%);
+    animation: fadeIn 2.5s ease-in-out; /* Subtle fade-in effect */
+}
+
+/* Add animation for login container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+}
+
+/* Login form heading */
+.login-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-container h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #6a11cb;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Form group for better alignment */
+.form-group-login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Labels with spacing */
+.form-group-login label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input fields with clean design */
+.form-group-login input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group-login input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+/* Submit button with gradient effect */
+.login-submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e20ce6, #061023);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-submit-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+}
+
+.login-submit-button:active {
+    transform: translateY(1px);
+}
+
+/* Error message styling */
+p {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Add a subtle glow to the login container */
+.login-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a link for "Forgot Password" */
+.login-container .forgot-password {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-container .forgot-password a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-container .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Add a small footer */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

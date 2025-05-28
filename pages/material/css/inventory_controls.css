@@ -1,0 +1,40 @@
+body {
+    background: #f5f5f5;
+}
+.container {
+    margin-top: 20px;
+}
+.card {
+    border-radius: 10px;
+}
+.inventory-card .card-content {
+    padding: 20px;
+}
+.inventory-card .card-title {
+    font-weight: 600;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.status.available {
+    background: #4caf50;
+    color: white;
+}
+.status.sold {
+    background: #f44336;
+    color: white;
+}
+.status.maintenance {
+    background: #ff9800;
+    color: white;
+}
+.btn-small {
+    margin-right: 5px;
+}
+.modal {
+    max-width: 500px;
+    border-radius: 10px;
+}

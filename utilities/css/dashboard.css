@@ -1,0 +1,261 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+.side-panel {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, teal,black);
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures the content is spaced out vertically */
+    overflow-y: auto;
+    z-index: 2000;
+  }
+  
+  /* Hide scrollbar */
+  .side-panel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .side-panel h3 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .side-panel ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .side-panel ul li {
+    margin: 10px 0;
+  }
+  
+  /* Main menu items - ensure they are left-aligned */
+  .side-panel ul li a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: left; /* Left-aligned text */
+    width: 100%; /* Ensures the link takes the full width of the container */
+    justify-content: flex-start; /* Ensure the main menu text is aligned to the left */
+  }
+  
+  .side-panel ul li a:hover {
+    background-color: #3d3e3e;
+    color: white;
+  }
+  
+  /* Icon spacing for main menu items */
+  .side-panel ul li a i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  /* Submenu (centered) */
+  .submenu {
+    display: none; /* Make the submenu hidden initially */
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    text-align: center; /* Ensures submenu items are centered */
+  }
+  
+  /* Submenu items */
+  .submenu li {
+    display: inline-flex;  /* Change to inline-flex to make items align horizontally */
+    align-items: center;
+    justify-content: flex-start;  /* Centers the items horizontally */
+    padding: 3px 0; /* Added padding for better spacing */
+    margin: 0 ;
+  }
+  
+  .submenu li a {
+    display: flex; /* Ensures text and icons are aligned properly */
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding-left: 10px;
+    padding-top: 1px !important;  /* Reduced top padding */
+    padding-bottom: 2px !important; 
+    margin: 0 !important;
+  }
+  
+  .submenu li a:hover {
+    color: #ffffff;
+  }
+  
+  .submenu li a i {
+    margin-right: 8px; /* Adds space between the icon and text */
+    font-size: 16px; /* Adjust icon size */
+  }
+  
+  /* Optional: styling for submenu toggle */
+  .toggle-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .toggle-menu i {
+    margin-right: 10px; /* Space between the icon and the menu text */
+  }
+  
+  /* Main content area */
+  .content {
+    margin-left: 250px;
+    padding-top: 30px;
+    margin-top: 60px;
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* For smaller screens, the sidebar can collapse */
+  @media (max-width: 768px) {
+    .side-panel {
+      width: 200px;
+    }
+  
+    .content {
+      margin-left: 200px;
+    }
+  }
+  
+  /* For very small screens, sidebar will collapse completely */
+  @media (max-width: 576px) {
+    .side-panel {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  }
+  
+  /* Logout button styles */
+  .logout-btn {
+    background-color: #dc3545; /* Red background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: fixed; /* Makes the logout button fixed on the page */
+    top: 20px; /* Position it 20px from the top */
+    right: 20px; /* Position it 20px from the right */
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-left:100px;
+  }
+  
+  /* Main Content Area */
+  .dashboard-content {
+    margin-left: 250px; /* Adjust for sidebar width */
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  /* Recent Activities */
+  .recent-activities {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  
+  .activity-item {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+    border-left: 5px solid #007bff;
+  }
+  
+  
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  #revenueChart {
+    width: 100% !important; 
+    max-height: 200px !important;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .stat-box {
+    background: #008080;
+    color: white;
+    padding: 15px;
+    width: 23%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: white;
+}

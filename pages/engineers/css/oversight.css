@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    background-color: #eef2f7;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    max-width: 58%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Dashboard Title */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Card Design */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Task Completion Chart */
+.task-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Issue Tracker */
+.issue-tracker {
+    padding: 15px;
+}
+
+/* Issue Tracker Enhancements */
+.issue-tracker .list-group-item {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Issue Tracker Colors */
+.issue-tracker .bug {
+    background: #ffeded;
+    color: #d9534f;
+}
+
+.issue-tracker .delay {
+    background: #fff7d6;
+    color: #f0ad4e;
+}
+
+.issue-tracker .quality {
+    background: #e0f2ff;
+    color: #007bff;
+}
+
+.issue-tracker .list-group-item:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Engineer Efficiency & Deadlines */
+.engineer-efficiency,
+.deadlines {
+    padding: 15px;
+}
+
+/* Table Styling */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    width: 100%;
+}
+
+.table thead {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background: #e3f2fd;
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-md-6, .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

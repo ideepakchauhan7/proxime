@@ -1,0 +1,9 @@
+# Ignore sensitive config files
+config/
+
+# Ignore IDE or OS specific files
+.vscode/
+
+env/
+
+serviceAccountKey.json

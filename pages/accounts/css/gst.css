@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* GST Section */
+.accordion-button {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+.accordion-body {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* File Upload */
+.upload-section {
+    display: flex;
+    gap: 10px;
+}
+
+.upload-section input {
+    flex: 1;
+}
+
+/* GST Filing Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.btn-primary, .btn-warning, .btn-danger {
+    margin-right: 5px;
+}

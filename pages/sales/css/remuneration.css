@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Remuneration List Styling */
+#remuneration-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.remuneration-card {
+    background: #fff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paid {
+    background-color: #28a745;
+    color: white;
+}
+
+.pending {
+    background-color: #dc3545;
+    color: white;
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf1f1;
+    margin: 0;
+    padding: 20px;
+}
+
+.failures-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #dc3545;
+    color: white;
+}
+
+td {
+    color: #333;
+}

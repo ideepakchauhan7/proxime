@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Campaign List Styling */
+#campaign-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campaign {
+    background: #fff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #28a745;
+    color: white;
+}
+
+.upcoming {
+    background-color: #ffc107;
+    color: black;
+}
